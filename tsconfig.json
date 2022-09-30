@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "target": "es5",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "downlevelIteration": true,
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "strict": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "types": ["cypress", "cypress-real-events", "@types/cypress-image-snapshot", "node", "@4tw/cypress-drag-drop"]
+    },
+    "include": ["src", "cypress"],
+    "exclude": ["build", "node_modules"],
+    "ts-node": {
+      "require": ["tsconfig-paths/register"]
+    }
+  }
+  
